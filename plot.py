@@ -13,6 +13,8 @@ data_top = df.head()
 # find different areas
 area_frame = df['Area'].unique()
 
+colors ={'yes':'red', 'no':'blue', 'Yes': 'red','No':'blue'}
+
 for anarea in area_frame:
     print (anarea)
     areaframe = df[df['Area']==anarea]
@@ -20,25 +22,28 @@ for anarea in area_frame:
     print ( areaframe['Water Temperature (degrees C)'])
     titleString = "Area: " + anarea
     plt.title (titleString)
-    plt.plot(areaframe["Date"], areaframe["Water Temperature (degrees C)"], 'o', label ='Water temperature')
+    plt.scatter(areaframe["Date"], areaframe["Water Temperature (degrees C)"], c=areaframe["Red tide ?"].map(colors), label ='Water temperature')
     plt.xlabel("Date/Time")
     plt.ylabel("T [C]")
     #plt.show()
     fileName = anarea+"_temperature.png"
+    plt.legend()
     plt.savefig(fileName)
     plt.clf()
     plt.title (titleString)
-    plt.plot(areaframe["Date"], areaframe["Salinity (ppt)"], 'o',label = "Salinity (ppt)")
+    plt.scatter(areaframe["Date"], areaframe["Salinity (ppt)"],c=areaframe["Red tide ?"].map(colors),label = "Salinity (ppt)")
     plt.ylabel("Salinity (ppt)")
     plt.xlabel("Date/Time")
     #plt.show()
+    plt.legend()
     fileName = anarea+"_Salinity.png"
     plt.savefig(fileName)
     plt.clf()
     plt.title (titleString)
-    plt.plot(areaframe["Date"], areaframe["O2 (mg/L)"], 'o',label = "O2 (mg/L)")
+    plt.scatter(areaframe["Date"], areaframe["O2 (mg/L)"],c=areaframe["Red tide ?"].map(colors), label = "O2 (mg/L)")
     plt.ylabel("O2 (mg/L)")
     plt.xlabel("Date/Time")
+    plt.legend()
     #plt.show()
     fileName = anarea+"_oxygen.png"
     plt.savefig(fileName)
