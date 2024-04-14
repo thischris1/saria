@@ -13,6 +13,7 @@ currentDir = os.getcwd()
 
 pd.to_datetime(df['Date'])
 # find different areas
+timeFilteredFrame = df[(df['Date']>'2022-01-03') & (df['Date']<'2024-01-01')]
 area_frame = df['Area'].unique()
 print (area_frame)
 colors ={'yes':'red', 'no':'blue', 'Yes': 'red','No':'blue'}
@@ -29,10 +30,6 @@ for anarea in area_frame:
     for col in columnnamelist:
     
         areaframe = df[df['Area']==anarea]
-        if areaframe.dropna().empty:
-            print ("Empty frame "+ str(anarea))
-            continue
-        
         areaframe.set_index('Date',drop=False, inplace=True)
         red_tide_yes = areaframe[areaframe["Red tide ?"]=='Yes']
         print (red_tide_yes)
