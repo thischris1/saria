@@ -16,7 +16,6 @@ pd.to_datetime(df['Date'])
 area_frame = df['Area'].unique()
 print (area_frame)
 colors ={'yes':'red', 'no':'blue', 'Yes': 'red','No':'blue'}
-#start = "2019-09-08"
 start = dt.date(2022, 3,1)
 end= dt.date(2023,7,1)
 
