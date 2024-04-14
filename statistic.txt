@@ -1,0 +1,24 @@
+Calculating mean and var of Water Temperature (degrees C)
+Water Temperature (degrees C): ALL Values Mean 28.408870967741933  Variance = 1.844554812483609
+Water Temperature (degrees C):  RED TIDE Mean 28.125  Variance = 0.8345229603962802
+Water Temperature (degrees C):  NO RED TIDE Mean 28.428448275862067  Variance = 1.3872591704497763
+Calculating mean and var of Salinity (ppt)
+Salinity (ppt): ALL Values Mean 28.907462686567165  Variance = 82.09949276175514
+Salinity (ppt):  RED TIDE Mean 30.1  Variance = 1.9550504398153574
+Salinity (ppt):  NO RED TIDE Mean 28.811290322580643  Variance = 9.400512091892882
+Calculating mean and var of O2 (mg/L)
+O2 (mg/L): ALL Values Mean 6.825  Variance = 2.475316455696202
+O2 (mg/L):  RED TIDE Mean 6.833333333333333  Variance = 0.7071067811865476
+O2 (mg/L):  NO RED TIDE Mean 6.823943661971831  Variance = 1.6542123536796594
+Calculating mean and var of pH
+pH: ALL Values Mean 8.118640000000001  Variance = 0.08454732903225808
+pH:  RED TIDE Mean 8.347777777777779  Variance = 0.1690989191108105
+pH:  NO RED TIDE Mean 8.100862068965517  Variance = 0.29111351130060786
+Calculating mean and var of NO3 (PPM)
+NO3 (PPM): ALL Values Mean 1.747153846153846  Variance = 6.750231371496721
+NO3 (PPM):  RED TIDE Mean 2.95  Variance = 3.059139312508231
+NO3 (PPM):  NO RED TIDE Mean 1.6469166666666666  Variance = 2.545189496447982
+Calculating mean and var of PO4 (PPM)
+PO4 (PPM): ALL Values Mean 1.6906106870229007  Variance = 7.5536703934233715
+PO4 (PPM):  RED TIDE Mean 1.455  Variance = 0.9117900586818827
+PO4 (PPM):  NO RED TIDE Mean 1.7100826446280992  Variance = 2.848821246254835

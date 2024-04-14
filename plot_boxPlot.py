@@ -79,8 +79,8 @@ for col in columnnamelist:
 	    
 	    filePath = os.path.join(currentDir, fileName)
 	    print(filePath)
-	    #plt.show()
-	    plt.savefig(filePath)
+	    plt.show()
+	    #plt.savefig(filePath)
 	    
 	    plt.clf()
              
